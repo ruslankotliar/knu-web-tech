@@ -1,0 +1,684 @@
+@import url(//db.onlinewebfonts.com/c/0a5fbb91dc4a457f5945dca11d44517d?family=Atlas+Grotesk+Web+Regular);
+@import url(//db.onlinewebfonts.com/c/7e9578185e53514ad28680c83c0c6654?family=Larsseit-Bold);
+@font-face {font-family: "Atlas Grotesk Web Regular"; src: url("//db.onlinewebfonts.com/t/0a5fbb91dc4a457f5945dca11d44517d.eot"); src: url("//db.onlinewebfonts.com/t/0a5fbb91dc4a457f5945dca11d44517d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0a5fbb91dc4a457f5945dca11d44517d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0a5fbb91dc4a457f5945dca11d44517d.woff") format("woff"), url("//db.onlinewebfonts.com/t/0a5fbb91dc4a457f5945dca11d44517d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0a5fbb91dc4a457f5945dca11d44517d.svg#Atlas Grotesk Web Regular") format("svg"); }
+@font-face {font-family: "Larsseit-Bold"; src: url("//db.onlinewebfonts.com/t/7e9578185e53514ad28680c83c0c6654.eot"); src: url("//db.onlinewebfonts.com/t/7e9578185e53514ad28680c83c0c6654.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7e9578185e53514ad28680c83c0c6654.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7e9578185e53514ad28680c83c0c6654.woff") format("woff"), url("//db.onlinewebfonts.com/t/7e9578185e53514ad28680c83c0c6654.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7e9578185e53514ad28680c83c0c6654.svg#Larsseit-Bold") format("svg"); }
+
+
+* {
+    font-family: "Atlas Grotesk Web Regular", sans-serif;
+}
+
+
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+    
+}
+
+header {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f5f5f5;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+}
+
+.intro {
+    margin-top: 4rem;
+}
+
+
+.first-el {
+    display: grid;
+    margin-left: 3rem;
+    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+    justify-self: start;
+    align-items: center;
+    
+}
+
+.menu-item:hover {
+    box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: max-content;
+    padding: 0.5rem;
+}
+
+.first-el p, .first-el h2 {
+    display: inline;
+}
+
+.second-el {
+    display: grid;
+    gap: 2rem;
+    margin-right: 3rem;
+    grid-template-columns: 1fr 1fr;
+    justify-self: end;
+    align-items: center;
+}
+
+.first-el p, .first-el h2 {
+    display: inline;
+}
+
+.intro {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 2fr 2fr;
+    background-color: #f5f5f5;
+}
+
+.intro img {
+    height: 60vh;
+    width: 60vh;
+}
+
+.intro .first-element {
+    margin-left: 5rem;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+.intro .first-element p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    gap: 1rem;
+}
+
+.intro .second-element {
+    margin-top: 3rem;
+    width: 70%;
+}
+
+.tranding {
+    
+    background-color: #f5f5f5;
+}
+
+.tranding-div {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    margin-left: 4rem;
+    margin-right: 4rem;
+    gap: 1rem;
+}
+
+.tr-title {
+    margin-top: 0;
+    margin-left: 4rem;
+    color: #e7a729;
+}
+.tranding-div img {
+    width: 8vh;
+    height: 8vh;
+}
+
+.two-ways {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 35%;
+}
+
+.two-ways h2 {
+    margin: auto;
+}
+
+.leaves {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin: auto;
+}
+
+.leaves span {
+    margin-left: 2rem;
+}
+
+.leaves img {
+    margin-left: 4rem;
+    height: 35vh;
+    width: 35vh;
+}
+
+.tw-w {
+    background-color: white;
+}
+
+.platform-pres {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    width: 80%;
+    justify-items: start;
+    margin-left: 10rem;
+}
+
+.pl-pres-m {
+    background-color: white;
+    position: relative;
+    padding-top: 2rem;
+}
+.pl-pres-m::before {
+    content: '\2190';
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    top: 50%;
+    background-color: #a5823d;
+    width: 10vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pl-pres-m::after {
+    content: '\2192';
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: #a5823d;
+    width: 10vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pl-pres-m:hover::before {
+    opacity: 0.6;
+}
+.pl-pres-m:hover::after {
+    opacity: 0.6;
+}
+
+.book {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+}
+.book img {
+    width: 25vh;
+    height: 25vh;
+}
+
+.book-img {
+    height: 52vh !important;
+    width: 45vh !important;
+    align-self: end;
+}
+
+.pl-tm  img{
+    margin-left: 2rem;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+}
+
+
+
+.co-author {
+    display: flex;
+    gap: 1rem;
+}
+
+.auth-name {
+    align-self: center;
+}
+
+.join-btns {
+    display: flex;
+    /* width: 20%; */
+    margin: auto;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+    /* gap: 2rem; */
+
+}
+
+.more {
+    width: 90%;
+    margin: auto;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.correct-inf {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85%;
+    margin: auto;
+    gap: 15%;
+}
+
+.m-slides {
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 4rem;
+}
+
+.slides {
+    padding-top: 2rem !important;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 110%;
+    margin: auto !important;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+}
+
+
+.slides img {
+    height: 35vh;
+    width: 35vh;
+    align-content: stretch;
+    margin: auto;
+}
+
+.rate {
+    background-color: white;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto !important;
+}
+
+.rate-star {
+    font-size: 3rem;
+}
+
+.stars {
+    padding-top: 1rem;
+}
+
+.stars:hover {
+    color: #e7a729;
+}
+
+.folks {
+    margin-top: 2rem;
+}
+
+.post:hover {
+    color: #128685;
+    cursor: pointer;
+}
+
+.tips-s {
+    background-color: white;
+}
+
+.tips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75%;
+    height: 63vh;
+    margin: auto;
+    gap: 0;
+    border-top: 1px solid grey;
+}
+
+.fresh-id::after {
+    content:'';
+    background: url('../img/violets.jpg') no-repeat center center;
+    z-index: 10;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width:100%;
+    height:100%;
+    opacity: 0.4; /* Here is your opacity */
+}
+
+.fresh-id {
+  position: relative;
+  color: rgb(21, 255, 0);
+  margin-top: 2rem !important;
+  margin-left: 2rem;
+    
+  /* Full height */
+  height: 100%;
+  
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    height: 50vh;
+    width: 45vh;
+}
+
+.ideas {
+     height: 100%;
+     display: flex;
+     text-align: center;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     
+
+}
+
+.ideas p {
+    display: flex;
+    justify-content: center;
+    width: 40vh;
+    color: black;
+}
+
+.ideas h2 {
+    width: 40vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-block-start: 0;
+ }
+
+.tons {
+    height: 60vh;
+    border-left: 1px solid grey;
+    padding-top: 2rem !important;
+}
+
+.tons div {
+    position: relative;
+    display: flex;
+}
+
+.tons img {
+    height: 12vh;
+    width: 10vh;
+    padding-left: 2rem;
+}
+
+.ago {
+    align-self: center;
+    place-self: center
+}
+
+.tons span {
+    position: absolute;
+  top: 50%;
+  left: 25%;
+ 
+}
+
+footer {
+    background-color: #f5f5f5;
+}
+
+.cwn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    flex-direction: column;
+}
+
+.hr {
+    width: 80%;
+}
+.hp {
+    width: 90%;
+}
+
+.resources {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.resources ul {
+    list-style: none;
+}
+
+.greenery {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-items: start;
+    margin-left: 7rem;
+  
+}
+
+.res li {
+    margin-bottom: 1.5rem;
+}
+
+.discover li {
+    margin-bottom: 1.5rem;
+}
+
+.com li {
+    margin-bottom: 0.5rem;
+}
+
+#grenery99 {
+    color: #7293aa;
+    font-size: 1.5rem;
+}
+
+#number {
+    color: #7293aa;
+    font-size: 1.5rem;
+}
+
+#first-und {
+    border-bottom: 2px solid #128685;
+}
+
+#world-class {
+    color: #128685;
+    font-size: 3rem;
+    /* font-weight: 200; */
+}
+
+#find-btn {
+    background-color: #128685;
+    border: 0;
+    color: white;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+
+#find-search {
+    width: 25vh;
+    height: 4vh;
+    padding-left: 5px;
+    margin-right: 0.5rem;
+}
+
+#creativity {
+    color: #a5823d;
+    border-bottom: 4px solid #a5823d;
+    font-family:Larsseit-Bold, sans-serif;
+    cursor: pointer;
+}
+
+#creativity:hover {
+    color: #e7a729;
+    border-bottom: 4px solid #e7a729;
+}
+
+#two {
+    border-bottom: 1px solid black;
+}
+
+.start {
+    font-weight: bold;
+}
+
+button {
+    color: white;
+    font-weight: bold;
+}
+
+#platform {
+    color: #a5823d;
+    font-size: 2rem;
+    font-family: Larsseit-Bold, sans-serif;
+}
+
+#get-started {
+    background-color: #a5823d;
+    border: 0;
+    width: 25vh;
+    height: 5vh;
+    border-radius: 5px;
+}
+
+#get-started:hover {
+    opacity: 0.6;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#join-now {
+    background-color: transparent;
+    border: 2px solid #a5823d;
+    border-radius: 5px;
+    width: 25vh;
+    height: 5vh;
+    color: black;
+    font-weight: bold;
+}
+
+#plants {
+    border-bottom: 2px solid black;
+}
+
+.stars:hover {
+    cursor: pointer;
+}
+
+#all-cat {
+    background-color: black;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    width: 25vh;
+    margin-left: 40%;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+#reviews {
+   text-decoration: underline;
+}
+
+#fresh-ideas {
+    color: #128685;
+}
+
+#read-now {
+    color: #a5823d;
+    border-bottom: 1px dotted black;
+    width: 13vh;
+    text-decoration-style: dashed;
+    font-family: Larsseit-Bold, sans-serif;
+
+}
+
+.create-with {
+    color: grey;
+    opacity: 0.25;
+    padding-bottom: 0;
+    margin-bottom: 0.6rem;
+}
+
+.cdr {
+    color: #7293aa;
+    font-weight: bold;
+}
+
+.circle {
+    color: #cccccc;
+}
+.circle:hover {
+    color: #6d6b6b;
+    cursor: pointer;
+}
+
+#olive-oil:hover {
+  filter: saturate(100%) invert(70%) sepia(90%) saturate(2795%) hue-rotate(69deg) brightness(50%) contrast(108%) opacity(0.5);
+}
+
+#olive-oil::before {
+    content: 'aaa';
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width:100%;
+    height:100%;
+}
+
+
+#olive-oil {
+  position: relative;
+    
+  /* Full height */
+  
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul li:hover {
+    color: #e7a729;
+    cursor: pointer;
+}
+
+#two-ways {
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+    font-weight: 400;
+}
+
+#login {
+    cursor: pointer;
+}
+
+.col-div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+  
+}
+
+.col-div hr {
+    width: 50vh;
+}
+
+.insp {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-family: "Atlas Grotesk Web Regular";
+}
+
+.tons img {
+    margin-left: 2rem;
+}

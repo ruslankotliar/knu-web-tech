@@ -1,0 +1,426 @@
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  background-color: rgb(230, 222, 222);
+}
+
+.intro {
+  background-color: #76cdd8 ;
+}
+
+button {
+  background-color: #17837f;
+  border: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 9rem;
+  height: 3rem;
+  color: white;
+}
+
+
+.section-1 .element-2:hover, .section-3 .element-2:hover {
+  clip-path: polygon(25% 0%, 60% 0, 100% 18%, 100% 100%, 0 100%, 0 0);
+  color: #76cdd8;
+}
+
+.section-2 .element-1:hover {
+  color: #76cdd8;
+  clip-path: polygon(39% 0, 100% 0, 100% 30%, 100% 100%, 0 100%, 0 10%);
+
+}
+
+.section-2 .element-1 button:hover {
+  background-color: rgb(118, 205, 216)
+}
+
+.section-3 .element-1:hover {
+  transform: scale(1.2);
+  transition: all 1s ease-in-out;
+}
+
+.section-4 .element-2:hover {
+  transform: scale(1.2);
+  transition: all 1s ease-in-out;
+}
+
+.section-5 .element-1:hover {
+  transform: scale(1.2);
+  transition: all 1s ease-in-out;
+}
+
+.section-1 h1, .section-2 h1 {
+  color: #76cdd8;
+}
+
+.section-1 .element-1 h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.section-7, .app-form, .section-2 .element-2 {
+  color: white;
+}
+
+/* Your code goes here */
+
+.section-1 {
+  display: flex;
+  height: 35vh;
+}
+
+.section-1 .element-1 {
+  
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #76cdd8;
+
+}
+
+.section-1 .element-1 h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.section-1 .element-2 {
+  background-color: white;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-2 {
+  display: flex;
+  height: 35vh;
+}
+
+.section-1 .element-2 p {
+  width: 80%;
+}
+
+.section-2 .element-1 {
+  background-color: white;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.section-2 .element-1 button {
+  display: flex;
+  margin-right: 3rem;
+}
+
+.section-4 .element-1 button {
+  display: flex;
+  margin-right: 3rem;
+}
+
+.section-2 .element-1 .text {
+  width: 80%;
+}
+
+.section-2 .element-2 {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #76cdd8;
+}
+
+.section-2 .element-2 img {
+  border-radius: 50%;
+  height: 25vh;
+  width: 25vh;
+}
+
+.section-3 {
+  display: flex;
+  height: 45vh;
+}
+
+.section-3 .element-1 {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.section-3 .element-2 {
+  background-color: white;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+.section-3 .element-2 p, h1 {
+  width: 75%;
+  margin-top: 0;
+}
+
+.section-4 {
+  margin-top: 1rem;
+  background-color: white;
+  display: flex;
+  height: 70vh;
+}
+
+.section-4 .element-1 {
+  width: 70vw;
+  
+}
+
+.section-4 .element-1 {
+  padding: 4rem;
+}
+
+.section-4 .element-1 button:hover {
+  background-color: rgb(118, 205, 216)
+}
+
+.section-4 .element-2 img {
+  height: 100%;
+}
+
+.section-5 {
+  margin-top: 1rem;
+  background-color: white;
+  display: flex;
+  height: 70vh;
+}
+
+.section-5 .element-1 {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.section-5 .element-2 {
+  background-color: white;
+  width: 65vw;
+  display: flex;
+  column-gap: 2rem;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+  margin-left: 8%;
+  height: 85%;
+}
+.section-5 .element-2 .plans h2 {
+  padding-top: 1rem;
+  width: 100%;
+  margin: auto;
+  margin-block-end: 0;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.section-5 .element-2 .plans p {
+  width: 100%;
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  padding-bottom: 2rem;
+}
+
+.section-5 .element-2 p {
+  width: 100%;
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  padding-bottom: 1rem;
+}
+
+.section-5 .element-2 .subelement {
+  border: 2px solid #17837f;
+  width: 50%;
+  
+}
+
+.section-5 .element-2 .subelement .plans {
+  color: white;
+}
+
+.section-5 .element-2 .subelement:hover {
+  border: 2px solid #76cdd8;
+  box-shadow: 0 0 0 0.2rem #24d4d4;
+  width: 50%;
+  
+}
+
+/* .section-5 .element-2 .subelement:hover > .spec-disc {
+  display: block;
+  color: red;
+  display: none;
+} */
+
+.section-5 .element-2 .subelement:nth-child(2)::after {
+  content: "*Special discount";
+  display:none;
+}
+.section-5 .element-2 .subelement:nth-child(2):hover::after::first-letter {
+  color:red;
+  display:none;
+}
+.section-5 .element-2 .subelement:nth-child(2):hover::after  {
+  color:red;
+  display:flex;
+  justify-content: center;
+  
+}
+
+.section-5 .element-2 .subelement button:hover {
+  background-color: #24d4d4;
+  
+}
+
+.hh {
+  margin-right: 3.5rem;
+}
+
+.spec-disc {
+  margin-top: 0;
+  color: #76cdd8;
+}
+
+.spec-disc .red {
+  color: red;
+}
+
+.section-5 .element-2 .subelement .plans, .section-5 .element-2 .subelement h2, .plans p {
+  background-color:  #17837f;
+  margin-block-start: 0;
+  justify-content: center;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.section-5 .element-2 .subelement .text {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.section-5 .element-1 img {
+  height: 100%;
+  width: 35vw;
+}
+
+.app-form {
+  margin-top: 1rem;
+  background-color: #26cdca;
+  height: 13vh;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5rem;
+  padding-top: 1rem;
+}
+
+.app-section {
+  position: relative;
+  height: 30vh;
+}
+
+.section-6 {
+  display: flex;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 70vw;
+  /* justify-content: center; */
+  background-color: white;
+  padding: 2rem;
+  bottom: -45px;
+  /* margin: 0 auto;
+  margin-bottom: 2rem; */
+}
+
+.section-6 input {
+  display: flex;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-top: 1.3rem;
+  width: 100%;
+  height: 1.6rem;
+  padding: 0.4rem;
+}
+
+.section-6 input:focus, .section-6 textarea:focus, .section-6 select:focus {
+  border-color: #24d4d4; 
+  box-shadow: 0 0 0 0.2rem #24d4d4; 
+}
+
+.section-6 button:hover {
+  background-color: rgb(118, 205, 216)
+}
+
+.section-6 select {
+  display: flex;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-top: 1.3rem;
+  width: 105%;
+  height: 2rem;
+}
+
+.section-6 textarea {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 6rem;
+  margin-top: 1.3rem;
+}
+
+.section-6 .element-1 {
+  background-color: white;
+
+}
+
+.submit-btn {
+  margin-top: 5rem;
+}
+
+.section-7 {
+  background-color: #17837f;
+  display: flex;
+  justify-content: center;
+  column-gap: 10rem;
+}
+
+.section-7 div {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}

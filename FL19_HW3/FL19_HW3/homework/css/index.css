@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+body {
+    text-align: center;
+    height: 100vh;
+    background: rgb(150,175,150);
+    background: linear-gradient(90deg, rgba(150,175,150,1) 0%, rgba(24,255,0,1) 33%, rgba(100,229,255,1) 100%);
+}
+
+header {
+    height: max-content;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    letter-spacing: 1px;
+    padding: 7rem;
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 6em;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+header:hover {
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    letter-spacing: 2px;
+}
+
+.start,
+.fight,
+.start:after,
+.fight:after {
+    cursor: pointer;
+    position: absolute;
+    bottom: 50%;
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 2rem;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.start:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'START';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.fight:after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'FIGHT';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+  }
+
+.start:hover:after,
+.fight:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+    .start,
+    .start:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+
+.hidden {
+    display: none;
+}
+
+.battle-field {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.battle-field div {
+    border: 2px solid black;
+}
+
+/* wow hero  */
+.wowHero {
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: all 0.3s ease-in-out;
+}
+
+.wowHero:hover {
+  transition-delay: .5s;
+  cursor: pointer;
+  transform: scale(1.2);
+  z-index: 10;
+}
+
+.wowHero h3 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.wowHero p, .wowHero h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.wowHero p {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.wowHero h5 {
+    margin-top: 1rem;
+}
+
+.wowHero button {
+    margin-bottom: 1rem;
+    font-family: inherit;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.wowHero button {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.wowHero button {
+  background-color: #fff;
+}
+
+.wowHero button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.characters-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 0 5rem;
+    padding-bottom: 2rem;
+}
+
+.characters-list div {
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+.characters-list img {
+    width: 25vh;
+    height: 25vh;
+}
+
+.battle-field img {
+    width: 25vh;
+    height: 25vh;
+}
+
+@media screen and (max-width: 992px) {
+    .characters-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+     
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .characters-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+    }
+  }

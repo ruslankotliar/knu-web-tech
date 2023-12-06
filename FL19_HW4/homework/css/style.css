@@ -1,0 +1,96 @@
+/* Write your code here */
+
+button {
+    cursor: pointer;
+}
+
+
+.hidden {
+    display: none;
+}
+
+#loading {
+    display: none;
+}
+
+#loading-fetch {
+    display: none;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#btn-js, #btn-fetch {
+    width: 45vh;
+    height: 10vh;
+    background-color: #24af84;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.users {
+    display: flex;
+    margin-top: 4rem;
+    gap: 20%;
+    justify-content: center;
+
+}
+
+.users div {
+    text-align: center;
+}
+
+.users #data-js, .users #data-fetch {
+    border: 1px solid grey;
+    padding: 2rem
+}
+
+#data-js div, #data-fetch div {
+    margin-top: 10px;
+    background-color: #eaeaea;
+    padding: 2rem;
+}
+
+
+
+
+#edit-btn {
+    background-color: #18b2ff;
+    border: 0;
+    margin-right: 1rem;
+    width: 8vh;
+    height: 3vh;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+#delete-btn {
+    background-color: #f91717;
+    border: 0;
+    width: 8vh;
+    height: 3vh;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+#save-btn {
+    background-color: #24af84;
+    border: 0;
+    width: 8vh;
+    height: 3vh;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+input {
+    width: 15vh;
+    height: 2.5vh;
+}
+
+
